@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery.modal.css" media="screen">
+
+	<!-- jQuery Lib -->
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.3/themes/start/jquery-ui.css" type="text/css" rel="Stylesheet" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<!-- 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+
+<!-- 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> -->
+	<!-- js lib -->
+
+	<title>Calendar</title>
+</head>
+
+<body>
+<div id="main">
+
+	<!-- login, register, logout button -->
+	<div class = "loginreg">
+		<input id="username" type="text" placeholder=username>
+		<input id="password" type="password" placeholder=password>
+		<button id="btn_login">Login</button>
+		<button id="btn_reg">Register</button>
+		<button id="btn_logout">Logout</button>
+		<p id=loginStatus>Welcome, Guest</p>
+	</div>
+
+	<h1 id="caltitle">Calendar</h1>
+
+
+	<!-- calendar -->
+	<div class="month">
+		<div id="current">Current:</div>
+		<button id="btn_prevmos">Previous</button>
+		<button id="btn_nextmos">Next</button>
+	</div>
+
+	<!-- event tag -->
+	<div class="eventTag">
+		<p id="displayTagBar">Display events by tag: </p>
+		<select id = "eventTag">
+			<option id ="tag_all">All</option>
+	        <option id ="tag_important">Important</option>
+	        <option id ="tag_birthday">Birthday</option>
+	        <option id ="tag_meeting">Meeting</option>
+	        <option id ="tag_personal">Personal</option>
+	    </select>
+    </div>
+
+
+	<div class="calendar">
+		<table id="table" class="cal">
+			<tr class="week">
+				<td>SUN</td>
+				<td>MON</td>
+				<td>TUE</td>
+				<td>WED</td>
+				<td>THU</td>
+				<td>FRI</td>
+				<td>SAT</td>
+			</tr>
+			<!-- Other days to be stuffed in js -->
+		</table>
+	</div>
+	
+	<!-- The addEvent Modal -->
+	<div id="addEvent" class="modal">
+		<!--Modal content-->
+		<div class="modal-content">
+		<form id="addEventForm">
+			<h1>Create your event</h1>
+			<span class="close">x</span>
+				<div class="eventTitle">
+					<label>Title:</label>
+					<textarea id="eventTitle" name="title" placeholder="Title" cols="50" rows="1"></textarea>
+				</div>
+				<div class="eventContent">
+		   		  	<label>Content:</label>
+		   			<textarea id="eventContent" name="content" placeholder="Content" cols="50" rows="4"></textarea>
+		   		</div>
+		   		<div class="eventTime">
+		   			<label>Time:</label>
+		   			<input type="time" id="eventTime" name="time">
+		   		</div>
+		   		<div class="addEventTag">
+		   		<label>Tag:</label>
+			   		<select id = "addEventTag">
+			   			<option id ="add_Optional"></option>
+	                    <option id ="add_Important">Important</option>
+	                    <option id ="add_Birthday">Birthday</option>
+	                    <option id ="add_Meeting">Meeting</option>
+	                    <option id ="add_Personal">Personal</option>
+	                </select>
+                </div>
+                <div class="share">
+					<label>Share to:</label>
+						<textarea id="eventShare" name="share" placeholder="Share to... (username)" cols="50" rows="1"></textarea>
+                </div>
+	    		<input type="button" id="submit" value="Submit"/>
+	    </form>
+	    </div>
+    </div>
+
+
+    <!-- The editEvent Modal -->
+	<div id="editEvent" class="modal">
+		<!--Modal content-->
+		<div class="modal-content">
+		<form id="editEventForm">
+			<h1>Edit Your Event</h1>
+			<span class="close2">x</span>
+				<div class="eventTitle">
+					<label>Title:</label>
+					<textarea id="eventTitleEdit" name="title" placeholder="Title" cols="50" rows="1"></textarea>
+				</div>
+				<div class="eventContent">
+		   		  	<label>Content:</label>
+		   			<textarea id="eventContentEdit" name="content" placeholder="Content" cols="50" rows="4"></textarea>
+		   		</div>
+		   		<div class="eventTime">
+		   			<label>Time:</label>
+		   			<input type="time" id="eventTimeEdit" name="time">
+		   		</div>
+		   		<div class="editEventTag">
+		   		<label>Tag:</label>
+			   		<select id = "editEventTag">
+			   			<option id ="Optional"></option>
+	                    <option id ="Important">Important</option>
+	                    <option id ="Birthday">Birthday</option>
+	                    <option id ="Meeting">Meeting</option>
+	                    <option id ="Personal">Personal</option>
+	                </select>
+                </div>
+	    		<input type="button" id="edit" value="Edit"/>
+	    		<input type="button" id="delete" value="Delete"/>
+	    </form>
+	    </div>
+    </div>
+
+	<!-- modal js -->
+    <script src="js/jquery-1.12.0.min.js"></script>
+<!-- <script src="js/jquery.modal.min.js"></script> -->
+
+   
+	<script type="text/javascript" src="calendar.js"></script> 
+<!--     <script type="text/javascript" src="js/jquery.modal.js"></script> -->
+</div>
+</body>
+</html>

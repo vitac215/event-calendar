@@ -1,0 +1,45 @@
+Name: KeZhou(Vita) Chen, Chenyang(Clara) Wang
+Student ID: 423121, 445113
+
+
+Link to the home page: http://ec2-52-25-45-59.us-west-2.compute.amazonaws.com/~vitac215/module5/index.html
+
+
+Username List (username, password):
+news_inst, news_password
+calcalcal, calcalcal
+tester, tester
+baeknuna, 12345
+
+
+
+Basic usage:
+- Enter username and password, and press the register button.
+- Enter the username and password again, and press the login button to login.
+- Click a day to create an event on that day. You can choose to tag it with a category or share it to another user (with correct username).
+- Click an event to edit or delete it 
+(while only the time and title will be displayed on the calendar, you can view the full content on the edit/delete panel). 
+
+
+
+Brief description for the creative portion:
+(1)Tag an event with a particular category
+Users can tag an event with a particular category among "none, important, birthday, meeting and personal".
+Users can also enable/disable those tags in the calendar view.
+
+(2)Share events with other users
+Users can choose to share the event with another user by entering the correct username when creating the event.
+Both users will be able to view, edit, or delete the event then.
+One difference is that the other user will see a title attached by the original user's username.
+For example, if the original user named "cal" creates an event titled "Let's study 330 together",
+it will appear as "Let's study 330 together shared by cal" in the other's user's calendar view.
+
+(3)Click a day to create an event on that day
+Users can click a day on the calendar to create an event on that day.
+There is no need to manually enter the date (we noticed that many of our classmates did their create event function in that way).
+The date will be automatically gotten by just clicking the day on the calendar.
+Though the assignment did not specify a way to create events,
+we think the way we did that requires some extra work and deserves some creative points.
+
+(4)Highlight current date
+The current date will always have a light red background, different from other dates.

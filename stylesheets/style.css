@@ -1,0 +1,105 @@
+body {
+	width: 1000px; 
+	background-color: #ffcce6; 
+	margin: 0 auto;
+	padding: 0;
+	font:12px/16px Verdana, sans-serif; 
+}
+
+div#main {
+	background-color: #d9d9d9;
+	margin: 0;
+	padding: 10px;
+}
+
+#btn_logout, #btn_nextmos {
+	float: right;
+}
+
+#loginStatus {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+#displayTagBar {
+	margin-top: 50px;
+	font-weight: bold;
+}
+
+#caltitle {
+	height: 40px;
+	font-size: 40px;
+	text-align:center;
+	margin-top: 70px;
+	border-bottom: 1px solid #FFF;
+}
+
+#btn_prevmos {
+	float: left;
+}
+
+.month {
+	margin-top: -10px;
+}
+
+#current {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+table.cal {
+	table-layout: fixed;
+	width: 100%;
+	text-align: center;
+	empty-cells: show;
+	margin-top: -50px;
+}
+
+tr {
+	height: 30px;   /*height of the top row cells*/
+	padding: 15px;
+}
+
+tr.day {   			/*height of the other cells*/
+	height: 120px;
+	font-size: 150%;
+	vertical-align: top;
+	text-align: left;
+}
+
+tr {
+	background-color: #f2f2f2;
+}
+
+tr.week {
+	font-weight: bold;
+	font-size: 150%;
+	background-color: #FFF;
+}
+
+.eventDay {
+	height: auto;
+}
+
+.calendar {
+	margin: 70px 0px 60px 0px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #FFF;
+}
+
+#displayTagBar {
+	padding-top: 20px;
+}
+
+.tdday {
+	font-weight: bold;
+}
+
+/*Event day cell style*/
+.eventDay {
+	font-size: 10px;
+	font-weight: normal;
+	background-color: #ffffff;
+	margin: 5px 0px 5px 0px;
+}
