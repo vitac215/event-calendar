@@ -74,7 +74,7 @@ if($n==0){
 }elseif(!($n>=4 && $n<=10)){
     echo json_encode(array(
         "success" => false,
-        "message" => "The length of the usernsme should be 5-16"
+        "message" => "The length of the usernsme should be 5-10"
     ));
 	exit;
 
