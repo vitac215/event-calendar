@@ -94,6 +94,7 @@ tr.week {
 
 .tdday {
 	font-weight: bold;
+	cursor: pointer;
 }
 
 /*Event day cell style*/
